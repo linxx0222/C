@@ -10,10 +10,10 @@ int main()
 
     if (input > 0 && (input & (input - 1)) == 0 )
     {
-        printf("Input is a 2 Square number\n");
+        printf("Input is Power By 2\n");
     }
     else
-        printf("Input is not a 2 Square number\n");
+        printf("Input is not Power By 2\n");
 
 
     return 0;
