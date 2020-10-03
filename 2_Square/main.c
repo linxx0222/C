@@ -5,7 +5,7 @@ int main()
 {
     int input;
 
-    printf("Please type a number¡G");
+    printf("Please type a number:");
     scanf("%d", &input);
 
     if (input > 0 && (input & (input - 1)) == 0 )
