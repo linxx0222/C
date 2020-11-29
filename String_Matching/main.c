@@ -16,7 +16,7 @@ int main()
     int target_len = strlen(target);
     int want_len = strlen(want);
 
-    for (i = 0; i <= target_len - want_len; i++)
+    for (i = 0; i < target_len - want_len; i++)
     {
         mat = 0;
         while (mat < want_len && target[i + mat] == want[mat]) mat++;
