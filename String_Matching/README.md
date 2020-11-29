@@ -3,6 +3,7 @@
 
 n = len(target)
 m = len(want)
+
 暴力搜尋
 
 解決問題:
