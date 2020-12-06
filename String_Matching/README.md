@@ -21,5 +21,7 @@ m = len(want)
 最差狀況: O(m * n)
 
 Reference:
+
 https://www.evanlin.com/about-kmp/
+
 http://wiki.csie.ncku.edu.tw/acm/course/String_Matching
