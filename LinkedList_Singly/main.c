@@ -70,6 +70,46 @@ void createNewDataAtMiddle(int index, int number)
     }
 }
 
+void DeleteNode(int index)
+{
+    Data *temp = head;
+    int i = 0;
+    if (head == NULL)
+        printf("No Data!\n");
+    else
+    {
+        if (index == 0)
+        {
+            head = head ->next;
+            free(temp);
+            return;
+        }
+        while(temp != NULL)
+        {
+            if( (index > 0) && (index == (i + 1)) )
+            {
+                if(temp->next->next == NULL)
+                {
+                    Data *temp2 = temp->next;
+                    temp->next = NULL;
+                    free(temp2);
+                    return;
+                }
+                Data *temp1 = temp->next;
+                temp->next = temp->next->next;
+                free(temp1);
+                return;
+            }
+            temp = temp->next;
+            i++;
+        }
+        if (temp == NULL && index > i )
+        {
+            printf("Out of range!\n");
+        }
+    }
+}
+
 void printAllData(Data* start)
 {
     if (start == NULL)
@@ -129,7 +169,8 @@ int main()
         printf("3. Add data at middle\n");
         printf("4. Print All data\n");
         printf("5. Find data\n");
-        printf("6. Exit\n");
+        printf("6. Delete data\n");
+        printf("7. Exit\n");
         scanf("%d", &choice);
 
         switch(choice)
@@ -160,6 +201,11 @@ int main()
                 findNode(data);
                 break;
             case 6:
+                printf("Input want to delete index: ");
+                scanf("%d", &index);
+                DeleteNode(index);
+                break;
+            case 7:
                 exit(0);
             default:
                 printf("Error!\n");
