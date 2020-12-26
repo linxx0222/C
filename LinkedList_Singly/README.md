@@ -24,3 +24,5 @@ Function:
 5. printAllData
 
 6. findNode
+
+7. Reverse List
