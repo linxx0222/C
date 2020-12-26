@@ -156,6 +156,29 @@ void findNode(int number)
     }
 }
 
+void ReverseList(void)
+{
+    Data *previous = NULL;
+    Data *current = head;
+    Data *preceding = head->next;
+    if(current == NULL)
+    {
+        printf("No Data!\n");
+    }
+    else
+    {
+        while(preceding != NULL)
+        {
+            current->next = previous;
+            previous = current;
+            current = preceding;
+            preceding = preceding->next;
+        }
+        current->next = previous;
+        head = current;
+    }
+}
+
 int main()
 {
     printf("[Linked List] - Singly Linked List \n");
@@ -170,7 +193,8 @@ int main()
         printf("4. Print All data\n");
         printf("5. Find data\n");
         printf("6. Delete data\n");
-        printf("7. Exit\n");
+        printf("7. Reverse List\n");
+        printf("8. Exit\n");
         scanf("%d", &choice);
 
         switch(choice)
@@ -206,6 +230,9 @@ int main()
                 DeleteNode(index);
                 break;
             case 7:
+                ReverseList();
+                break;
+            case 8:
                 exit(0);
             default:
                 printf("Error!\n");
