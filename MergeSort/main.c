@@ -58,7 +58,7 @@ void merge(int arr[], int head, int mid, int tail)
   }
 }
 
-voide merge_sort(int arr[], int head, int tail)
+void merge_sort(int arr[], int head, int tail)
 {
     if(head < tail)
     {
