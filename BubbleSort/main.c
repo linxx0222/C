@@ -3,6 +3,7 @@
 
 int main()
 {
+    printf("Bubble Sort\n");
     int A[] = {-3, 6, 5, -1, 0, 9, 3};
     int i, j, temp;
     int n = sizeof(A)/sizeof(int);
