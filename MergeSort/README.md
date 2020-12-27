@@ -20,6 +20,8 @@ Merge Sort 是 Devide-and-Conquer 相當著名的應用之一，步驟如下：
 
 合併左右半部的兩個 Sublist 成為一個新的 Data List
 
+
+
 時間複雜度 (Time complexity)
 
 如果 Sublist A 的長度為 m、Sublist B 的長度為 n，則合併兩個 Sublist：
@@ -47,6 +49,8 @@ Merge Sort 的總時間
 Average/Best/Worst Case 的時間皆為 O(n logn)。
 
 改用 Recursive Time Function 運算仍可得相同結果：
+
+
 
 
 空間複雜度 (Space Complexity)
