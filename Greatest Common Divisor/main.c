@@ -15,7 +15,7 @@ int GCD(int a, int b)
 
 int main()
 {
-    printf("Greatest Common Divisor! (GCD)\n");
+    printf("Greatest Common Divisor! (GCD) (Recursive)\n");
     int a, b;
     int result;
     printf("Type 2 numbers:\n");
