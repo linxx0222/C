@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+
 int reverse(int x){
     if(x == 0 )
         return 0;
 
-    int i = 0;
-    long long temp = x;
+    int degree = 0;
+    int temp = x;
     int negative = 0;
 
     if(x < 0)
@@ -18,10 +20,9 @@ int reverse(int x){
     while(temp != 0)
     {
         temp = temp / 10;
-        i++;
+        degree++;
     }
 
-    int degree = i;
     int arr[degree];
 
     if(x < 0)
@@ -40,7 +41,7 @@ int reverse(int x){
         j++;
     }
 
-    long result = 0;
+    int result = 0;
     int k;
     k = degree - 1;
     for(j = 0; j < degree; j++)
@@ -51,7 +52,7 @@ int reverse(int x){
     if(negative)
         result = -result;
 
-    if(result > INT_MAX || result  < INT_MIN ) return 0;
+    // if(result > INT_MAX || result  < INT_MIN ) return 0;
 
     return result;
 }
