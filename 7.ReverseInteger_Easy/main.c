@@ -4,6 +4,22 @@
 
 
 int reverse(int x){
+    //Best Solution
+    int ans = 0;
+    while (x != 0)
+    {
+        int r = x % 10;
+        if (ans > INT_MAX / 10 || ans < INT_MIN / 10) return 0;
+
+        ans = ans * 10 + r;
+        x /= 10;
+    }
+    return ans;
+}
+
+
+int reverse(int x){
+    //This method cannot pass some test case about overflow.
     if(x == 0 )
         return 0;
 
