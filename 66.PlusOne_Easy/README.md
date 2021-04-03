@@ -36,3 +36,7 @@ Constraints:
 1 <= digits.length <= 100
 
 0 <= digits[i] <= 9
+
+Note: 這個整形數組全部為9的時候，加1之後，數組會增加一位。
+
+Reference: https://blog.csdn.net/Timsley/article/details/47414535
