@@ -37,7 +37,7 @@ int main()
         }
     }while(sum > month_days[month-1]);
     day = sum;
-    printf("\n第%d天后是%d-%d-%d", daytime, year, month, day);
+    printf("\n第%d天後是%d-%d-%d", daytime, year, month, day);
 
     return 0;
 }
